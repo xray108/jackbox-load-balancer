@@ -8,7 +8,7 @@ const app = express();
 const targets = [
   { url: "https://jackbox-d4d.glitch.me", status: "unknown", weight: 1 },
   { url: "https://jb-srv.oned4d.cc", status: "unknown", weight: 2 },
-  { url: "https://jbox.oned4d.cc", status: "unknown" weight: 2 },
+  { url: "https://jbox.oned4d.cc", status: "unknown", weight: 2 },
   { url: "https://jb-ecast.klucva.ru", status: "unknown", weight: 3 },
   { url: "https://rujackbox.vercel.app", status: "unknown", weight: 3 },
 ];
