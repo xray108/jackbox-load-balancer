@@ -1,6 +1,6 @@
-import express from "express";
-import { createProxyMiddleware } from "http-proxy-middleware";
-import nodeFetch from "node-fetch";
+const express = require("express");
+const { createProxyMiddleware } = require("http-proxy-middleware");
+const nodeFetch = require("node-fetch");
 
 const app = express();
 
