@@ -19,6 +19,11 @@ const clientSessions = {};
 // Интервал для проверки состояния серверов (каждые 120 секунд)
 setInterval(checkServerStatuses, 120000);
 
+// Middleware для обработки запроса к /favicon.ico
+app.get("/favicon.ico", (req, res) => {
+  res.status(204).end(); // Возвращаем пустой ответ без содержимого
+});
+
 // Middleware для корневого пути (/) — показываем HTML-страницу
 app.use("/", (req, res, next) => {
   if (req.path === "/") {
@@ -261,5 +266,5 @@ module.exports = (req, res) => {
 app.listen(process.env.PORT, async () => {
   console.log(`Load balancer is running on port ${process.env.PORT}`);
   console.log("Checking server statuses at startup...");
-  await checkServerStatuses();
+  await checkServerStatuses(); // Проверяем состояние серверов при запуске
 });
