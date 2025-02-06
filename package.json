@@ -1,7 +1,6 @@
 {
   "name": "jackbox-load-balancer",
   "version": "1.0.0",
-  "type": "module",
   "description": "Jackbox Load Balancer with Vercel",
   "main": "api/index.js",
   "scripts": {
@@ -10,6 +9,6 @@
   "dependencies": {
     "express": "^4.21.2",
     "http-proxy-middleware": "^3.0.3",
-    "node-fetch": "^3.3.2"
+    "node-fetch": "^2.7.0"
   }
 }
