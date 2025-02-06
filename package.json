@@ -1,6 +1,7 @@
 {
   "name": "jackbox-load-balancer",
   "version": "1.0.0",
+  "type": "module",
   "description": "Jackbox Load Balancer with Vercel",
   "main": "api/index.js",
   "scripts": {
